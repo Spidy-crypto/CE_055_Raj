@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Lab4_task2.Home" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Lab4_task2.Home" %>
 
 <!DOCTYPE html>
 
@@ -123,7 +123,7 @@
                 <tr>
                     <td class="auto-style5">state</td>
                     <td class="auto-style6">
-                        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
+                        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                             <asp:ListItem Value="-1">select</asp:ListItem>
                             <asp:ListItem Value="gj">Gujarat</asp:ListItem>
                             <asp:ListItem Value="mh">Maharastra</asp:ListItem>
