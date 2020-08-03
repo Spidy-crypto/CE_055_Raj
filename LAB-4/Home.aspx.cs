@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -25,26 +25,7 @@ namespace Lab4_task2
             }
         }
 
-        protected void TextBox4_TextChanged(object sender, EventArgs e)
-        {
-            if (DropDownList1.SelectedValue.Equals("-1"))
-            {
-                DropDownList2.Items.Clear();
-            }
-            if (DropDownList1.SelectedValue.Equals("gj"))
-            {
-                DropDownList2.Items.Clear();
-                DropDownList2.Items.Add(new ListItem("Ahmedabad", "Ahmedabad"));
-                DropDownList2.Items.Add(new ListItem("Vadodara", "Vadodara"));
-            }
-            if (DropDownList1.SelectedValue.Equals("mh"))
-            {
-                DropDownList2.Items.Clear();
-                DropDownList2.Items.Add(new ListItem("Mumbai", "Mumbai"));
-                DropDownList2.Items.Add(new ListItem("Pune", "Pune"));
-            }
-        }
-
+      
         protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -91,6 +72,31 @@ namespace Lab4_task2
         protected void img_Click(object sender, EventArgs e)
         {
             Response.Redirect("Image.aspx");
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (DropDownList1.SelectedValue.Equals("-1"))
+            {
+                DropDownList2.Items.Clear();
+            }
+            if (DropDownList1.SelectedValue.Equals("gj"))
+            {
+                DropDownList2.Items.Clear();
+                DropDownList2.Items.Add(new ListItem("Ahmedabad", "Ahmedabad"));
+                DropDownList2.Items.Add(new ListItem("Vadodara", "Vadodara"));
+            }
+            if (DropDownList1.SelectedValue.Equals("mh"))
+            {
+                DropDownList2.Items.Clear();
+                DropDownList2.Items.Add(new ListItem("Mumbai", "Mumbai"));
+                DropDownList2.Items.Add(new ListItem("Pune", "Pune"));
+            }
+        }
+
+        protected void TextBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
