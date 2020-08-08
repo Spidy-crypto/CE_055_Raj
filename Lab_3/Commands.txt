@@ -1,0 +1,22 @@
+Commands for LAB3 Task!
+
+1) create key file
+	$ sn -k mykey.snk
+	
+2) create Dll file using key file
+	$ csc /t:library /keyfile:mykey.snk calc.cs
+	
+3) upload dll file on GAC and want to see public key token (for old version)
+	$ gacutil -i calc.dll
+	$ ildasm calc.dll
+
+4) For new Verison of calc.cs => calc_new_version.cs
+	$ csc /t:library /keyfile:mykey.snk calc_new_version.cs
+	// that creates calc_new_version.dll file
+	
+5) To upload dll file on GAC
+	$ gacutil -i calc_new_version.dll
+	$ ildasm calc_new_version.dll
+	
+6) for creation of exe file for new version  => calc_driver.cs
+	$ csc /t:exe /r:calc_new_version.dll calc_driver.cs 
