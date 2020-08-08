@@ -1,0 +1,5 @@
+1) To create netmodule
+	csc /t:module filename.cs
+
+2)To combine netmodule in single dll file.
+	csc /t:library /addmodule:file1.netmodue /addmodule:file2.netmodule /out:combine.dll
