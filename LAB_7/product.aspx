@@ -30,7 +30,7 @@
             <br />
             <br />
             <br />
-            <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" CssClass="auto-style2" DataKeyNames="Id" DataSourceID="SqlDataSource1" Height="121px" OnPageIndexChanging="DetailsView1_PageIndexChanging" Width="255px" CellPadding="4" ForeColor="#333333" GridLines="None">
+            <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" CssClass="auto-style2" DataKeyNames="Id" DataSourceID="SqlDataSource1" Height="121px" Width="255px" CellPadding="4" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <CommandRowStyle BackColor="#E2DED6" Font-Bold="True" />
                 <EditRowStyle BackColor="#999999" />
